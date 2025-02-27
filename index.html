@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chain Reaction Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="ResultContainer" class="hidden">
+        <div id="Result">
+            <span id="winner">Red Wins</span><br/>
+            <input type="button" id="ok" value="Great" />
+        </div>
+    </div>
+
+    <div id="container">
+        <header>
+            <h1>Chain Reaction</h1>
+        </header>
+
+        <div id="grid"></div>
+    </div>
+
+    <footer>
+        <div>
+            Take control of the entire grid by dominating all cells.
+            When a cell reaches 4 atoms, it explodes, spreading atoms to adjacent cells.
+            If all cells belong to one player, they win!
+            If the grid is full, the player with more atoms wins.</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

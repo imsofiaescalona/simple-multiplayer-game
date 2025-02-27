@@ -1,0 +1,89 @@
+body {
+    background-color: rgb(51, 51, 51);
+    color: rgb(30, 250, 30);
+    font-family: arial;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#container {
+    margin: 0px auto;
+    width: 1000px;
+    min-height: 400px;
+    padding: 10px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-gap: 5px;
+    justify-content: center;
+    margin: 20px;
+}
+
+.cell {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #777;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+    background-color: #555;
+}
+
+.red-number {
+    color: red;
+}
+
+.green-number {
+    color: green;
+}
+
+#ResultContainer {
+    width: 100%;
+    height: 100%;
+    margin: 0px auto;
+    position: absolute;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    display: none;
+}
+
+#Result {
+    border: 1px solid rgb(30, 250, 30);
+    padding: 20px 50px 20px 50px;
+    top: 44%;
+    left: 37%;
+    width: 200px;
+    height: 70px;
+    position: relative;
+}
+
+#ok, #play-again {
+    background: none;
+    border: 1px solid rgb(30, 250, 30);
+    color: rgb(30, 250, 30);
+    padding: 5px;
+    bottom: 0px;
+    position: relative;
+    cursor: pointer;
+}
+
+#ok:hover, #play-again:hover {
+    cursor: pointer;
+}
+
+#play-again {
+    margin-top: 10px;
+    display: none; /* Initially hidden */
+}
